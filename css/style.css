@@ -1,0 +1,216 @@
+/******************* VARIABLES **************/
+/********************************************/
+/****************** MIXINS ******************/
+.formInputs {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+.headers {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.rightAlign {
+  text-align: center;
+}
+/******************* GLOBAL ************************/
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.75em;
+}
+a {
+  text-decoration: none;
+}
+/******************* HEADER ************************/
+header {
+  background: linear-gradient(rgba(41, 64, 114, 0.3), rgba(41, 64, 114, 0.3)), url(../img/background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: none;
+  padding: 10em 0;
+  text-align: center;
+}
+header h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #050505;
+}
+header form p {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 1em;
+  text-shadow: 0 0 10px #050505;
+}
+header form input,
+header form select {
+  display: inline;
+  font-size: 1em;
+}
+header form input,
+header form select {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .5em;
+}
+header form input[type="submit"] {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  display: inline;
+  font-size: 1.25em;
+  margin-top: .1em;
+  padding: .25em .4em;
+}
+header form input[type="submit"]:hover {
+  background-color: #a37f71;
+}
+/******************** MAIN *************************/
+main {
+  background-color: #576390;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2em 0 5em 0;
+  text-align: center;
+}
+main h1 {
+  line-height: 2em;
+  margin-bottom: -1.5em;
+}
+main h2 {
+  line-height: 2em;
+  margin-top: 2em;
+}
+main h3 {
+  line-height: 2em;
+}
+main h2 {
+  margin-top: 2em;
+}
+main img {
+  margin-top: .75em;
+  margin-bottom: 1em;
+  width: 200px;
+}
+main a {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin-top: .1em;
+  padding: .32em .75em;
+  text-decoration: none;
+}
+main a:hover {
+  background-color: #a37f71;
+}
+main p {
+  margin-top: 3em;
+  padding: 0 2em;
+}
+.bottom {
+  padding-top: 2em;
+}
+/******************** NAV *************************/
+nav {
+  background-color: #314570;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  padding: .5em 0 .7em 0;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+}
+nav a h2 {
+  color: #ffffff;
+  margin-top: .3em;
+}
+nav form p {
+  display: block;
+  margin-top: 1em;
+}
+nav form input,
+nav form select {
+  display: inline;
+}
+nav form input,
+nav form select {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: .5em;
+}
+nav form input[type="submit"],
+main form input[type="submit"] {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  display: inline;
+  font-size: 1em;
+  margin-top: .1em;
+  padding: .25em .4em;
+}
+nav form input[type="submit"]:hover,
+main form input[type="submit"]:hover {
+  background-color: #a37f71;
+}
+/*********************************************/
+@media screen and (min-width: 769px) {
+  nav {
+    text-align: left;
+  }
+  .rightAlign {
+    text-align: right;
+  }
+  nav form input,
+  nav form select {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  nav form p {
+    display: inline;
+  }
+  header {
+    display: block;
+  }
+  .bottom {
+    padding-top: 0;
+  }
+}
